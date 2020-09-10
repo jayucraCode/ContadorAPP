@@ -15,8 +15,8 @@ class _HomePageState extends State<HomePage>{
      appBar: AppBar(
        title: Text("Mi Primera Aplicación"),
        //centerTitle: true,
-       backgroundColor: Color(0xff1234bd),
-       elevation: 15,
+       //backgroundColor: Color(0xff1234bd),
+       elevation:15,
        actions: [
          IconButton(
            icon: Icon(Icons.camera_alt),
@@ -31,18 +31,16 @@ class _HomePageState extends State<HomePage>{
           mainAxisAlignment:  MainAxisAlignment.center,
          children: [
             Text("JOSE ALFREDO YUCRA COFRE", style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.blue ),),
-            Text("Has realizdo $_count clicks",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, ),),
+            Text("Has realizado $_count clicks",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, ),),
          ],
        ),
      ),
      floatingActionButton: FloatingActionButton(
        child: Icon(Icons.add),
        onPressed: (){
-
          setState(() {
            _count = _count+1;
          });
-
         // print(_count);
        },
      ),

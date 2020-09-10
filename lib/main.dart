@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:primerproyecto/pages/container_page.dart';
 import 'package:primerproyecto/pages/home_page.dart';
 
 void main(){
@@ -12,12 +13,15 @@ class MyApp extends StatelessWidget{
        title: "Mi Primera Aplicación",
        debugShowCheckedModeBanner: false,
        theme: ThemeData(
-         primaryColor: Colors.indigo,
-         accentColor: Colors.indigo,
-         primarySwatch: Colors.orange,
+         primarySwatch: Colors.indigo,
+         /*floatingActionButtonTheme: FloatingActionButtonThemeData(
+           backgroundColor: Colors.indigo,
+           elevation: 10.0,
+         ),*/
+         //accentColor: Colors.indigo,
        ),
 
-      home: HomePage()
+      home: ContainerPage(),
 
     );
   }
